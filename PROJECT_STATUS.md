@@ -12,10 +12,12 @@ Este documento é a bússola do projeto. Atualizado pelo orquestrador Xdan.
 - [x] **A2: Especificação Técnica & ADRs**
   - [x] Modelo de dados e Rules Engine mapeados.
   - [x] ADR-001 (Tech Stack) e ADR-002 (Safety) criados.
-- [ ] **A3: Setup & Arquitetura** (FOCO ATUAL)
-  - [ ] Inicialização do Next.js.
-  - [ ] Setup do Prisma.
-  - [ ] Implementação do motor de regras básico.
+- [x] **A3: Setup & Arquitetura**
+  - [x] Documentação de Origem e História (Viviane & Daniel)
+  - [x] Ativos de Marca (Logotipo Magna Lava)
+  - [x] Scaffold do Projeto (Next.js 16 + Tailwind v4)
+  - [x] Configuração Prisma & Database Schema
+  - [x] Implementação do Core Rules Engine
 - [ ] **B1: MVP Development**
   - [ ] M0: Safety Screening.
   - [ ] M1: Dashboard de Macros.

@@ -1,0 +1,101 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  profile       Profile?
+  measurements  Measurement[]
+  nutritionLogs NutritionLog[]
+  workoutLogs   WorkoutLog[]
+  cardioLogs    CardioLog[]
+  digitalTwin   DigitalTwinState?
+  auditLogs     AIAuditLog[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Profile {
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  age           Int
+  gender        String    // MALE, FEMALE
+  height        Float
+  activityLevel Float     // Multiplier (1.2 - 1.9)
+  goal          String    // CUTTING, BULKING, MAINTENANCE
+  conditions    String[]  // Safety screening
+  isSafetyPass  Boolean   @default(false)
+}
+
+model Measurement {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  weight        Float
+  bodyFat       Float?
+  leanMass      Float?
+  createdAt     DateTime  @default(now())
+}
+
+model NutritionLog {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  protein       Float
+  carbs         Float
+  fat           Float
+  calories      Float
+  water         Float
+  createdAt     DateTime  @default(now())
+}
+
+model WorkoutLog {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  exercises     Json      // List of exercises, sets, reps
+  duration      Int       // Minutes
+  intensity     String    // LOW, MEDIUM, HIGH
+  createdAt     DateTime  @default(now())
+}
+
+model CardioLog {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  type          String    // RUNNING, CYCLING, etc.
+  duration      Int       // Minutes
+  caloriesBurned Float
+  createdAt     DateTime  @default(now())
+}
+
+model DigitalTwinState {
+  userId            String    @unique
+  user              User      @relation(fields: [userId], references: [id])
+  metabolicFactor   Float     @default(1.0)
+  predictedPlateau  DateTime?
+  lastSync          DateTime  @default(now())
+}
+
+model AIAuditLog {
+  id            String    @id @default(cuid())
+  userId        String
+  user          User      @relation(fields: [userId], references: [id])
+  promptVersion String
+  rawInput      Json
+  rawOutput     String
+  guardrailHit  Boolean
+  reasoning     String
+  createdAt     DateTime  @default(now())
+}

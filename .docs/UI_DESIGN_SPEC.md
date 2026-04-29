@@ -2,7 +2,14 @@
 
 Este documento define a identidade visual e os tokens de design para garantir uma experiência "Premium State-of-the-Art" baseada no tema **Magna Lava**.
 
-## 1. Estética Central: "Magna Lava"
+## 1. Logotipo Oficial (A Identidade ViDa)
+O logotipo é o símbolo central da união e propósito do projeto:
+- **Vi (Viviane)**: Representada pelo braço feminino (lado esquerdo).
+- **Da (Daniel)**: Representado pelo braço masculino (lado direito).
+- **Simbolismo**: Os dois braços se unem para formar um coração incandescente sob a estética **Magna Lava**. Representa a força mútua e o compromisso com a saúde.
+- **Aplicação**: Deve ser usado com glow externo laranja (`hsl(18, 100%, 50%)`) em fundos pretos vulcânicos.
+
+## 2. Estética Central: "Magna Lava"
 O design deve evocar a força e a fluidez da lava vulcânica. O contraste entre o preto obsidiana e o laranja incandescente cria uma atmosfera de alta performance e intensidade.
 
 ## 2. Paleta de Cores (Tokens Magna Lava)
