@@ -1,21 +1,21 @@
-# UI/UX Design Specification — ViDa
+# UI/UX Design Specification — ViDa (Magna Lava Edition)
 
-Este documento define a identidade visual e os tokens de design para garantir uma experiência "Premium State-of-the-Art".
+Este documento define a identidade visual e os tokens de design para garantir uma experiência "Premium State-of-the-Art" baseada no tema **Magna Lava**.
 
-## 1. Estética Central: "Glassmorphism & Neon Bio-Tech"
-O design deve misturar elementos de transparência (vidro), profundidade e cores vibrantes que remetam à alta tecnologia e saúde.
+## 1. Estética Central: "Magna Lava"
+O design deve evocar a força e a fluidez da lava vulcânica. O contraste entre o preto obsidiana e o laranja incandescente cria uma atmosfera de alta performance e intensidade.
 
-## 2. Paleta de Cores (Tokens)
-- **Primary (Vibrant Green)**: `hsl(142, 70%, 50%)` — Energia e Saúde.
-- **Secondary (Deep Blue/Black)**: `hsl(222, 47%, 11%)` — Fundo Profundo (Dark Mode Default).
-- **Accent (Electric Cyan)**: `hsl(199, 89%, 48%)` — Cardio e Fluidez.
-- **Danger (Coral Red)**: `hsl(0, 84%, 60%)` — Alertas e Limites Críticos.
-- **Glass**: `hsla(0, 0%, 100%, 0.05)` com `backdrop-filter: blur(12px)`.
+## 2. Paleta de Cores (Tokens Magna Lava)
+- **Primary (Lava Orange)**: `hsl(18, 100%, 50%)` — Calor e Intensidade.
+- **Secondary (Volcanic Black)**: `hsl(0, 0%, 4%)` — Fundo Profundo e Sólido.
+- **Accent (Magma Yellow)**: `hsl(45, 100%, 50%)` — Alertas de progresso e destaque.
+- **Muted (Ash Gray)**: `hsl(0, 0%, 20%)` — Bordas e elementos secundários.
+- **Glass (Molten Glass)**: `hsla(18, 100%, 10%, 0.4)` com `backdrop-filter: blur(16px)` e `border: 1px solid hsla(18, 100%, 50%, 0.2)`.
 
 ## 3. Tipografia
-- **Font-Family**: `Inter` (Sans-serif) ou `Outfit` para títulos.
+- **Font-Family**: `Outfit` para títulos (geométrico e moderno) e `Inter` para leitura.
 - **Hierarchy**:
-  - `Display`: 48px, Bold, Tracking -2%.
+  - `Display`: 48px, Black (900), Tracking -3%, text-shadow: `0 0 20px hsla(18, 100%, 50%, 0.4)`.
   - `Body`: 16px, Regular, Leading 1.6.
 
 ## 4. Componentes Chave
