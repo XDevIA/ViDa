@@ -8,6 +8,10 @@ Transformar o monitoramento fitness em um sistema preditivo através da arquitet
 ## 📂 Documentação Principal
 - [PRD (Product Requirements)](file:///c:/Users/Lenovo/ViDa/.docs/PRD_WEBAPP_VIDA.md)
 - [Especificação Técnica](file:///c:/Users/Lenovo/ViDa/.docs/TECHNICAL_SPEC_VIDA.md)
+- [Architecture Guardrails](file:///c:/Users/Lenovo/ViDa/.docs/ARCHITECTURE_GUARDRAILS.md)
+- [UI/UX Design Spec](file:///c:/Users/Lenovo/ViDa/.docs/UI_DESIGN_SPEC.md)
+- [Data Flow Spec](file:///c:/Users/Lenovo/ViDa/.docs/DATA_FLOW_SPEC.md)
+- [Risk Matrix](file:///c:/Users/Lenovo/ViDa/.docs/SECURITY_RISK_MATRIX.md)
 - [Governança de Agentes](file:///c:/Users/Lenovo/ViDa/.agents/rules/VIDA_GOVERNANCE.md)
 - [Roadmap & Status](file:///c:/Users/Lenovo/ViDa/PROJECT_STATUS.md)
 
